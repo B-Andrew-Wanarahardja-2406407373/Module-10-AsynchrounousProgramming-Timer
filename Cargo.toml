@@ -1,0 +1,10 @@
+
+[package]
+name = "timer"
+version = "0.1.0"
+authors = ["Andrew"]
+edition = "2024"
+
+[dependencies]
+futures = "0.3"
+timer_future = { version = "0.1.0", path = "../timer_future" }
