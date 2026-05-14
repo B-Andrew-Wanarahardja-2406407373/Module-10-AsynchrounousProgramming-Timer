@@ -101,10 +101,11 @@ fn main() {
     spawner.spawn(async {
         println!("General Kenobi's computer   : Hello there!");
         // Wait for our timer future to complete after two seconds.
-        TimerFuture::new(Duration::new(2, 0)).await;
-        println!("General Grievous's copmuter : Ah, General Kenobi!");
+        TimerFuture::new(Duration::new(5, 0)).await;
+        println!("General Grievous's computer : Ah, General Kenobi!");
     });
 
+    println!("Andrew's computer           : *munches on popcorn*");
     // Drop the spawner so that our executor knows it is finished and won't
     // receive more incoming tasks to run.
     drop(spawner);
